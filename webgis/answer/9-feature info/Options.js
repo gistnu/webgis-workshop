@@ -23,7 +23,7 @@ Heron.options.map.layers = [
     // Over layers 
     new OpenLayers.Layer.WMS(
         "จังหวัด",
-        "http://map.nu.ac.th/gs-alr2/ows?", 
+        "http://localhost:8080/geoserver/ows?", 
 			{ layers: "alr:ln9p_prov", format: "image/png", transparent: true }, {
             isBaseLayer: false,
             singleTile: true,
@@ -35,7 +35,7 @@ Heron.options.map.layers = [
     ),
     new OpenLayers.Layer.WMS(
         "อำเภอ",
-        "http://map.nu.ac.th/gs-alr2/ows?", 
+        "http://localhost:8080/geoserver/ows?", 
 		{ layers: "alr:ln9p_amp", format: "image/png", transparent: true }, {
             isBaseLayer: false,
             singleTile: true,
@@ -47,7 +47,7 @@ Heron.options.map.layers = [
     ),
     new OpenLayers.Layer.WMS(
         "ถนน",
-        "http://map.nu.ac.th/gs-alr/ows?", 
+        "http://localhost:8080/geoserver/ows?", 
 		{ layers: "alr:ln9p_road", format: "image/png", transparent: true }, {
             isBaseLayer: false,
             singleTile: true,
@@ -59,7 +59,7 @@ Heron.options.map.layers = [
     ),
     new OpenLayers.Layer.WMS(
         "หมู่บ้าน",
-        "http://map.nu.ac.th/gs-alr2/ows?", 
+        "http://localhost:8080/geoserver/ows?", 
 		{ layers: "alr:ln9p_vill", format: "image/png", transparent: true }, {
             isBaseLayer: false,
             singleTile: true,
